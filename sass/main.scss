@@ -1,0 +1,16 @@
+$primary: #8795e8;
+$light: #fbf5e5;
+
+//changing theme colors
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "puplight": #f2efba,
+  "pupdark": #522192,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import Botstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
