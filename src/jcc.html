@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCC Kisumu</title>
-    <link href="/sass/main.css" rel="stylesheet">
-</head>
+
 <body>
     <!doctype html>
     <html lang="en">
@@ -18,6 +10,8 @@
       <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
       <meta name="generator" content="Hugo 0.72.0">
       <title>JCC Kisumu Church</title>
+
+      <link href="/sass/main.css" rel="stylesheet">
     
     <!--Boxicons CDN Link-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -61,7 +55,13 @@
    h4, p {
       color: #5a5a5a;
     }
-    
+    .drop {
+      background-color: #140152;
+      border: none;
+    }
+    .watch {
+      background-image: url("/assets/img/watch.avif");
+    }
         /* CUSTOMIZE THE CAROUSEL
         -------------------------------------------- */
     
@@ -173,22 +173,33 @@
                   <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Ministry</a>
+                    <div class="dropdown">
+                      <button class="drop nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Our Ministries
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#men">Men's Ministry</a></li>
+                        <li><a class="dropdown-item" href="#women">Women's Ministry</a></li>
+                        <li><a class="dropdown-item" href="#youth">Youth Ministry</a></li>
+                        <li><a class="dropdown-item" href="#sunday">Sunday School Ministry</a></li>
+                      </ul>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Academy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Fellowships</a>
+                    <a class="nav-link" href="#fellowship">Fellowships</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Up-Coming Events</a>
+                    <a class="nav-link" href="#events">Up-Coming Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Listen & Watch Us</a>
+                    <a class="nav-link" href="#lw">Listen & Watch Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="about.html#contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/index.html">Mark Kegohi</a>
@@ -299,7 +310,7 @@
           <hr class="featurette-divider">
     
           <div class="row featurette">
-            <div class="col-md-7">
+            <div class="col-md-7" id="men">
               <h2 class="featurette-heading">Men's Ministry. <span class="text-muted">It’ll blow your mind.</span>
               </h2>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
@@ -314,7 +325,7 @@
     
           <hr class="featurette-divider">
     
-          <div class="row featurette">
+          <div class="row featurette" id="women">
             <div class="col-md-7 order-md-2">
               <h2 class="featurette-heading">Women's Ministry. <span class="text-muted">See for yourself.</span></h2>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
@@ -329,7 +340,7 @@
     
           <hr class="featurette-divider">
     
-          <div class="row featurette">
+          <div class="row featurette" id="youth">
             <div class="col-md-7">
               <h2 class="featurette-heading">Youth Ministry. <span class="text-muted">Checkmate.</span></h2>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
@@ -343,7 +354,7 @@
 
             <hr class="featurette-divider">
             
-            <div class="row featurette">
+            <div class="row featurette" id="sunday">
               <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Sunday School Ministry. <span class="text-muted">See for yourself.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
@@ -358,14 +369,107 @@
             
           </div>
     
-          <hr class="featurette-divider">
+          <hr class="featurette-divider" id="fellowship">
     
           <!-- /END THE FEATURETTES -->
     <!-- Three columns of text below the carousel -->
 
+    <!--Listen And Watch-->
+<section class="" id="lw">
+  <div class="text-center watch pt-2 text-white pt-5 pb-5">
+    <i class='bx bx-play-circle bx-lg'></i><h1 class="text-xl-center">Listen & Watch</h1>
+  </div>
+  <div class="float-right text-black pt-3 font-weight-bolder">
+    <p>Listen us on fm-radio <i class='bx bx-radio bx-sm'></i></p>
+    <hr>
+    <p>Or Catch us on: <i class='bx bxl-facebook'>Facebook</i>  
+       <i class='bx bxl-youtube'>Youtube</i>  
+       <i class='bx bx-tv'>JCC.TV</i></p>
+  </div>
+
+</section> <br><br><br>
+
+    <hr class="featurette-divider">
+    
+
+    <!--Fellowships-->
+    <h2>Below Are our Kisumu area Home Fellowships, Click to confirm and join via Email;</h2>
+    <div class="accordion pt-0 pb-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Home Fellowship 2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <a href="about.html#contact">Join</a> Home Fellowship 2
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Home Fellowship 1
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <a href="about.html#contact">Join</a> Home Fellowship 1
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Home Fellowship 2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <a href="about.html#contact">Join</a> Home Fellowship 3
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Home Fellowship 4
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <a href="about.html#contact">Join</a> Home Fellowship 4
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Home Fellowship 5
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <a href="about.html#contact">Join</a> Home Fellowship 5
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!--End Fellowhips-->
+
+
     <!--Upcoming Events-->
-<section class="pt-1 pb-5">
-  <div class="container ">
+    <hr class="featurette-divider" id="events">
+<section class="pt-1">
+  <div class="container mb-0">
     <div class="row">
       <div class="col-6">
         <h3 class="mb-3 text-black" >Upcoming Events</h3>
@@ -392,9 +496,7 @@
                     <div class="card-body">
                       <h4 class="card-title">Special title treatment</h4>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              
                     </div>
-              
                   </div>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -404,7 +506,6 @@
                     <div class="card-body">
                       <h4 class="card-title">Special title treatment</h4>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              
                     </div>
                   </div>
                 </div>
@@ -500,6 +601,7 @@
                   </div>
                 </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -507,63 +609,19 @@
 </section>
 <!--End Of Upcoming Events-->
 
-<!--Church Services-->
-    <div class="row">
-        <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-    
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-                magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-    
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-    
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-                felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-     </div><!-- /.container -->
-<!--End Of Services-->
-    
+
     
         <!-- FOOTER -->
-        <footer class="container">
+        <footer class="container" style="background-color: #140152;">
           <p class="float-right"><a href="#">Back to top</a></p>
           <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
       </main>
     
     
-    
-    </body>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
 </body>
 </html>
 
