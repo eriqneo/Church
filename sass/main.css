@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.4 (https://startbootstrap.com/theme/stylish-portfolio)
@@ -3802,6 +3803,14 @@ fieldset:disabled .btn {
 .dropdown,
 .dropstart {
   position: relative;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 
 .dropdown-toggle {
@@ -11753,7 +11762,7 @@ html {
 }
 .dropdown-container {
   display: none;
-  background-color: #000;
+  background-color: #140152;
   padding-left: 8px;
   font-size: 13px;
 }
