@@ -15,6 +15,9 @@
     
     <!--Boxicons CDN Link-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -157,7 +160,7 @@
     <body>
     
       <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">JCC Kisumu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -269,11 +272,10 @@
         </div>
     
     <!--Church Services-->
-    <div class="d-flex flex-row justify-content-center container" id="services">
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="d-flex flex-row justify-content-center container" tabindex="0" id="services">
       <div class="col-lg-4">
-        <img src="/assets/img/child.jpg " class="rounded-circle w-50 h-50" alt="Service">
-    
-        <h2>1st Service</h2>
+        <img src="/assets/img/child.jpg " class="animate__animated animate__fadeInUpBig rounded-circle w-50 h-50" alt="Service">
+        <h2 id="services">1st Service</h2>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
           vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
           magna.</p>
@@ -401,57 +403,48 @@
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
+            Manyatta Region
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Accordion Item #2
+            Central Region
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled
-            with some actual content.</div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Accordion Item #3
+            Nyalenda Region
           </button>
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-            representative of how this would look in a real-world application.</div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Accordion Item #3
+            Town Milimani Region
           </button>
         </h2>
         <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-            representative of how this would look in a real-world application.
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home
           </div>
         </div>
       </div>
@@ -459,48 +452,36 @@
         <h2 class="accordion-header" id="flush-headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-            Accordion Item #3
+            Migosi Region
           </button>
         </h2>
         <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-            representative of how this would look in a real-world application.
-          </div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingSix">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-            Accordion Item #3
+            Riat Airport Region
           </button>
         </h2>
         <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-            representative of how this would look in a real-world application.
-          </div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingSeven">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-            Accordion Item #3
+            Nyamasaria Region
           </button>
         </h2>
         <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening
-            here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more
-            representative of how this would look in a real-world application.
-          </div>
+          <div class="accordion-body"><a href="about.html#contact">Click </a>to Join Home </div>
         </div>
       </div>
     </div>
